@@ -48,6 +48,13 @@ public class ProductsPage {
         String ActualTextss= driver.findElement(By.xpath(Sport_First)).getText();
         Assert.assertEquals(ExpectedTextss, ActualTextss);
     }
+
+    public static void sportFirstshoeVerification2(){
+        driver.findElement(By.xpath(sport_drop_xpath)).click();
+        String ExpectedTextss = "   Ultimate";
+        String ActualTextss= driver.findElement(By.xpath(Sport_First)).getText();
+        Assert.assertEquals(ExpectedTextss, ActualTextss);
+    }
     public static void sneakers_dropdown(){
 
     }
